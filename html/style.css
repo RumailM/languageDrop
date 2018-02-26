@@ -1,0 +1,19 @@
+.text {
+  font-size:3em;
+  width:300px;
+  color:black;
+  background: grey;
+}
+
+.arabic{
+  background:white;
+  direction:rtl;
+}
+
+#parent {
+    padding: 50% 0;
+}
+
+#child {
+    padding: 10% 0;
+}

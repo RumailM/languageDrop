@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Language Drop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="style4.css">
+
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+<body>
+<!-- Sidebar -->
+<div class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar"> <!--HERE gives the ID for the object -->
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px"> <!--HERE closes the side bar-->
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">"Learning today, leading tomorrow!"</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">This website aims to increase social mobility through easy access to education. We hope to inspire you to proceed and learn English as a foerign language, which in turn will open many doors of opportunities and hopefully brighten your future.</a><!--HERE make all of these clickable -->
+
+    <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Workshop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Learning today, leading tomorrow!</a> -->
+  </div>
+
+<!--THis is like a class or a function -->
+</div>
+<div class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="urdu-lessons"><!--HERE same thing as before, gave the ID urdu lessons -->
+  <a href="javascript:void(0)" onclick="audioFiles_close('urdu-lessons');" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px"><!--HERE closes urdu lessons -->
+    <i class="fa fa-remove"></i>
+  </a>
+  <h1 style="text-align:center;font-size:50px;"> Urdu / اردو </h1>
+  <div class="w3-bar-block w3-center">
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('urdu-course1');">کورس 1</a> </p>
+
+    <div id="urdu-course1" style="display:none;">
+      <a href="Urdu\UREM001.mp3" id = "urdu_course1_lesson1"   download="">سبق 1</a>
+      <a href="Urdu\UREM002.mp3" id = "urdu_course1_lesson2"   download="">سبق 2</a>
+      <a href="Urdu\UREM003.mp3" id = "urdu_course1_lesson3"   download="">سبق 3</a>
+      <a href="Urdu\UREM004.mp3" id = "urdu_course1_lesson4"   download="">  سبق 4</a>
+      <a href="Urdu\UREM005.mp3" id = "urdu_course1_lesson5"   download="">  سبق 5</a>
+      <a href="Urdu\UREM006.mp3" id = "urdu_course1_lesson6"   download="">  سبق 6</a>
+      <a href="Urdu\UREM007.mp3" id = "urdu_course1_lesson7"   download="">  سبق 7</a>
+      <a href="Urdu\UREM008.mp3" id = "urdu_course1_lesson8"   download="">  سبق 8</a>
+      <a href="Urdu\UREM009.mp3" id = "urdu_course1_lesson9"   download="">  سبق 9</a>
+      <a href="Urdu\UREM010.mp3" id = "urdu_course1_lesson10"  download="">  سبق 10</a>
+    </div>
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('urdu-course2');">کورس 2</a> </p>
+
+    <div id="urdu-course2" style="display:none;">
+      <a href="Urdu\UREM011.mp3" id = "urdu_course2_lesson11"   download="">   سبق 11</a>
+      <a href="Urdu\UREM012.mp3" id = "urdu_course2_lesson12"   download="">   سبق 12</a>
+      <a href="Urdu\UREM013.mp3" id = "urdu_course2_lesson13"   download="">   سبق 13</a>
+      <a href="Urdu\UREM014.mp3" id = "urdu_course2_lesson14"   download="">   سبق 14</a>
+      <a href="Urdu\UREM015.mp3" id = "urdu_course2_lesson15"   download="">   سبق 15</a>
+      <a href="Urdu\UREM016.mp3" id = "urdu_course2_lesson16"   download="">   سبق 16</a>
+      <a href="Urdu\UREM017.mp3" id = "urdu_course2_lesson17"   download="">   سبق 17</a>
+      <a href="Urdu\UREM018.mp3" id = "urdu_course2_lesson18"   download="">   سبق 18</a>
+      <a href="Urdu\UREM019.mp3" id = "urdu_course2_lesson19"   download="">   سبق 19</a>
+      <a href="Urdu\UREM020.mp3" id = "urdu_course2_lesson20"   download="">   سبق 20</a>
+    </div>
+    <!-- <div id="fade" class="black_overlay"></div> -->
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('urdu-course3');">کورس 3</a> </p>
+
+    <div id="urdu-course3" style="display:none;">
+      <a href="Urdu\UREM021.mp3" id = "urdu_course3_lesson21"   download="">   سبق 21</a>
+      <a href="Urdu\UREM022.mp3" id = "urdu_course3_lesson22"   download="">   سبق 22</a>
+      <a href="Urdu\UREM023.mp3" id = "urdu_course3_lesson23"   download="">   سبق 23</a>
+      <a href="Urdu\UREM024.mp3" id = "urdu_course3_lesson24"   download="">   سبق 24</a>
+      <a href="Urdu\UREM025.mp3" id = "urdu_course3_lesson25"   download="">   سبق 25</a>
+      <a href="Urdu\UREM026.mp3" id = "urdu_course3_lesson26"   download="">   سبق 26</a>
+      <a href="Urdu\UREM027.mp3" id = "urdu_course3_lesson27"   download="">   سبق 27</a>
+      <a href="Urdu\UREM028.mp3" id = "urdu_course3_lesson28"   download="">   سبق 28</a>
+      <a href="Urdu\UREM029.mp3" id = "urdu_course3_lesson29"   download="">   سبق 29</a>
+      <a href="Urdu\UREM030.mp3" id = "urdu_course3_lesson30"   download="">   سبق 30</a>
+    </div>
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('urdu-course4');">کورس 4</a> </p>
+
+    <div id="urdu-course4" style="display:none;">
+      <a href="Urdu\UREM031.mp3" id = "urdu_course4_lesson31"   download="">   سبق 31</a>
+      <a href="Urdu\UREM032.mp3" id = "urdu_course4_lesson32"   download="">   سبق 32</a>
+      <a href="Urdu\UREM033.mp3" id = "urdu_course4_lesson33"   download="">   سبق 33</a>
+      <a href="Urdu\UREM034.mp3" id = "urdu_course4_lesson34"   download="">   سبق 34</a>
+      <a href="Urdu\UREM035.mp3" id = "urdu_course4_lesson35"   download="">   سبق 35</a>
+      <a href="Urdu\UREM036.mp3" id = "urdu_course4_lesson36"   download="">   سبق 36</a>
+      <a href="Urdu\UREM037.mp3" id = "urdu_course4_lesson37"   download="">   سبق 37</a>
+      <a href="Urdu\UREM038.mp3" id = "urdu_course4_lesson38"   download="">   سبق 38</a>
+      <a href="Urdu\UREM039.mp3" id = "urdu_course4_lesson39"   download="">   سبق 39</a>
+      <a href="Urdu\UREM040.mp3" id = "urdu_course4_lesson40"   download="">   سبق 40</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('urdu-course5');">کورس 5</a> </p>
+
+    <div id="urdu-course5" style="display:none;">
+      <a href="Urdu\UREM041.mp3" id = "urdu_course5_lesson41"   download="">   سبق 41</a>
+      <a href="Urdu\UREM042.mp3" id = "urdu_course5_lesson42"   download="">   سبق 42</a>
+      <a href="Urdu\UREM043.mp3" id = "urdu_course5_lesson43"   download="">   سبق 43</a>
+      <a href="Urdu\UREM044.mp3" id = "urdu_course5_lesson44"   download="">   سبق 44</a>
+      <a href="Urdu\UREM045.mp3" id = "urdu_course5_lesson45"   download="">   سبق 45</a>
+      <a href="Urdu\UREM046.mp3" id = "urdu_course5_lesson46"   download="">   سبق 46</a>
+      <a href="Urdu\UREM047.mp3" id = "urdu_course5_lesson47"   download="">   سبق 47</a>
+      <a href="Urdu\UREM048.mp3" id = "urdu_course5_lesson48"   download="">   سبق 48</a>
+      <a href="Urdu\UREM049.mp3" id = "urdu_course5_lesson49"   download="">   سبق 49</a>
+      <a href="Urdu\UREM050.mp3" id = "urdu_course5_lesson50"   download="">   سبق 50</a>
+    </div>
+
+
+
+    <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 4</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 5</a> -->
+  </div>
+</div>
+
+
+
+
+
+<!-- <head>
+  <title>LIGHTBOX EXAMPLE</title>
+</head>
+
+<body>
+  <p>This is the main content. To display a lightbox click <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a>
+  </p>
+  <div id="light" class="white_content">This is the lightbox content. <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+  </div>
+  <div id="fade" class="black_overlay"></div>
+</body> -->
+
+
+
+
+<div class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="hindu-lessons"><!--HERE same thing as before, gave the ID urdu lessons -->
+  <a href="javascript:void(0)" onclick="audioFiles_close('hindu-lessons');" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px"><!--HERE closes urdu lessons -->
+    <i class="fa fa-remove"></i>
+  </a>
+  <h1 style="text-align:center;font-size:50px;"> Hindi / हिंदी </h1>
+  <div class="w3-bar-block w3-center">
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('hindu-course1');">कोर्स 1</a> </p>
+
+    <div id="hindu-course1" style="display:none;">
+      <a href="hindu\HIEM001.mp3" id = "hindu_course1_lesson1"   download="">  पाठ 1</a>
+      <a href="hindu\HIEM002.mp3" id = "hindu_course1_lesson2"   download="">  पाठ 2</a>
+      <a href="hindu\HIEM003.mp3" id = "hindu_course1_lesson3"   download="">  पाठ 3</a>
+      <a href="hindu\HIEM004.mp3" id = "hindu_course1_lesson4"   download="">  पाठ 4</a>
+      <a href="hindu\HIEM005.mp3" id = "hindu_course1_lesson5"   download="">  पाठ 5</a>
+      <a href="hindu\HIEM006.mp3" id = "hindu_course1_lesson6"   download="">  पाठ 6</a>
+      <a href="hindu\HIEM007.mp3" id = "hindu_course1_lesson7"   download="">  पाठ 7</a>
+      <a href="hindu\HIEM008.mp3" id = "hindu_course1_lesson8"   download="">  पाठ 8</a>
+      <a href="hindu\HIEM009.mp3" id = "hindu_course1_lesson9"   download="">  पाठ 9</a>
+      <a href="hindu\HIEM010.mp3" id = "hindu_course1_lesson10"  download=""> पाठ 10</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('hindu-course2');">कोर्स 2</a> </p>
+
+    <div id="hindu-course2" style="display:none;">
+      <a href="hindu\HIEM011.mp3" id = "hindu_course2_lesson11"   download="">  पाठ 11</a>
+      <a href="hindu\HIEM012.mp3" id = "hindu_course2_lesson12"   download="">  पाठ 12</a>
+      <a href="hindu\HIEM013.mp3" id = "hindu_course2_lesson13"   download="">  पाठ 13</a>
+      <a href="hindu\HIEM014.mp3" id = "hindu_course2_lesson14"   download="">  पाठ 14</a>
+      <a href="hindu\HIEM015.mp3" id = "hindu_course2_lesson15"   download="">  पाठ 15</a>
+      <a href="hindu\HIEM016.mp3" id = "hindu_course2_lesson16"   download="">  पाठ 16</a>
+      <a href="hindu\HIEM017.mp3" id = "hindu_course2_lesson17"   download="">  पाठ 17</a>
+      <a href="hindu\HIEM018.mp3" id = "hindu_course2_lesson18"   download="">  पाठ 18</a>
+      <a href="hindu\HIEM019.mp3" id = "hindu_course2_lesson19"   download="">  पाठ 19</a>
+      <a href="hindu\HIEM020.mp3" id = "hindu_course2_lesson20"   download="">  पाठ 20</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('hindu-course3');">कोर्स 3</a> </p>
+
+    <div id="hindu-course3" style="display:none;">
+      <a href="hindu\HIEM021.mp3" id = "hindu_course3_lesson21"   download="">  पाठ 21</a>
+      <a href="hindu\HIEM022.mp3" id = "hindu_course3_lesson22"   download="">  पाठ 22</a>
+      <a href="hindu\HIEM023.mp3" id = "hindu_course3_lesson23"   download="">  पाठ 23</a>
+      <a href="hindu\HIEM024.mp3" id = "hindu_course3_lesson24"   download="">  पाठ 24</a>
+      <a href="hindu\HIEM025.mp3" id = "hindu_course3_lesson25"   download="">  पाठ 25</a>
+      <a href="hindu\HIEM026.mp3" id = "hindu_course3_lesson26"   download="">  पाठ 26</a>
+      <a href="hindu\HIEM027.mp3" id = "hindu_course3_lesson27"   download="">  पाठ 27</a>
+      <a href="hindu\HIEM028.mp3" id = "hindu_course3_lesson28"   download="">  पाठ 28</a>
+      <a href="hindu\HIEM029.mp3" id = "hindu_course3_lesson29"   download="">  पाठ 29</a>
+      <a href="hindu\HIEM030.mp3" id = "hindu_course3_lesson30"   download="">  पाठ 30</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('hindu-course4');">कोर्स 4</a> </p>
+
+    <div id="hindu-course4" style="display:none;">
+      <a href="hindu\HIEM031.mp3" id = "hindu_course4_lesson31"   download="">  पाठ 31</a>
+      <a href="hindu\HIEM032.mp3" id = "hindu_course4_lesson32"   download="">  पाठ 32</a>
+      <a href="hindu\HIEM033.mp3" id = "hindu_course4_lesson33"   download="">  पाठ 33</a>
+      <a href="hindu\HIEM034.mp3" id = "hindu_course4_lesson34"   download="">  पाठ 34</a>
+      <a href="hindu\HIEM035.mp3" id = "hindu_course4_lesson35"   download="">  पाठ 35</a>
+      <a href="hindu\HIEM036.mp3" id = "hindu_course4_lesson36"   download="">  पाठ 36</a>
+      <a href="hindu\HIEM037.mp3" id = "hindu_course4_lesson37"   download="">  पाठ 37</a>
+      <a href="hindu\HIEM038.mp3" id = "hindu_course4_lesson38"   download="">  पाठ 38</a>
+      <a href="hindu\HIEM039.mp3" id = "hindu_course4_lesson39"   download="">  पाठ 39</a>
+      <a href="hindu\HIEM040.mp3" id = "hindu_course4_lesson40"   download="">  पाठ 40</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('hindu-course5');">कोर्स 5</a> </p>
+
+    <div id="hindu-course5" style="display:none;">
+      <a href="hindu\HIEM041.mp3" id = "hindu_course5_lesson41"   download="">  पाठ 41</a>
+      <a href="hindu\HIEM042.mp3" id = "hindu_course5_lesson42"   download="">  पाठ 42</a>
+      <a href="hindu\HIEM043.mp3" id = "hindu_course5_lesson43"   download="">  पाठ 43</a>
+      <a href="hindu\HIEM044.mp3" id = "hindu_course5_lesson44"   download="">  पाठ 44</a>
+      <a href="hindu\HIEM045.mp3" id = "hindu_course5_lesson45"   download="">  पाठ 45</a>
+      <a href="hindu\HIEM046.mp3" id = "hindu_course5_lesson46"   download="">  पाठ 46</a>
+      <a href="hindu\HIEM047.mp3" id = "hindu_course5_lesson47"   download="">  पाठ 47</a>
+      <a href="hindu\HIEM048.mp3" id = "hindu_course5_lesson48"   download="">  पाठ 48</a>
+      <a href="hindu\HIEM049.mp3" id = "hindu_course5_lesson49"   download="">  पाठ 49</a>
+      <a href="hindu\HIEM050.mp3" id = "hindu_course5_lesson50"   download="">  पाठ 50</a>
+    </div>
+
+
+
+
+
+    <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 4</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 5</a> -->
+  </div>
+</div>
+
+<!-- <div class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="arabic-lessons"><!-HERE same thing as before, gave the ID urdu lessons -->
+  <!-- <a href="javascript:void(0)" onclick="audioFiles_close('arabic-lessons');" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px"><!--HERE closes urdu lessons -->    <!-- <i class="fa fa-remove"></i> -->
+  <!-- </a>
+  <h1 style="text-align:center;font-size:50px;"> Arabic / عربى </h1>
+  <div class="w3-bar-block w3-center"> -->
+
+    <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 4</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 5</a> -->
+  <!-- </div>
+</div>  -->
+
+
+<div class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="bengali-lessons"><!--HERE same thing as before, gave the ID urdu lessons -->
+  <a href="javascript:void(0)" onclick="audioFiles_close('bengali-lessons');" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px"><!--HERE closes urdu lessons -->
+    <i class="fa fa-remove"></i>
+  </a>
+  <h1 style="text-align:center;font-size:50px;"> Bengali / বাঙালি </h1>
+  <div class="w3-bar-block w3-center">
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('bengali-course1');">পথ 1</a> </p>
+
+    <div id="bengali-course1" style="display:none;">
+      <a href="bengali\BNEM001.mp3" id = "bengali_course1_lesson1"   download="">  পাঠ 1</a>
+      <a href="bengali\BNEM002.mp3" id = "bengali_course1_lesson2"   download="">   পাঠ 2</a>
+      <a href="bengali\BNEM003.mp3" id = "bengali_course1_lesson3"   download="">   পাঠ 3</a>
+      <a href="bengali\BNEM004.mp3" id = "bengali_course1_lesson4"   download="">   পাঠ 4</a>
+      <a href="bengali\BNEM005.mp3" id = "bengali_course1_lesson5"   download="">   পাঠ 5</a>
+      <a href="bengali\BNEM006.mp3" id = "bengali_course1_lesson6"   download="">   পাঠ 6</a>
+      <a href="bengali\BNEM007.mp3" id = "bengali_course1_lesson7"   download="">   পাঠ 7</a>
+      <a href="bengali\BNEM008.mp3" id = "bengali_course1_lesson8"   download="">   পাঠ 8</a>
+      <a href="bengali\BNEM009.mp3" id = "bengali_course1_lesson9"   download="">   পাঠ 9</a>
+      <a href="bengali\BNEM010.mp3" id = "bengali_course1_lesson10"  download="">   পাঠ 10</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('bengali-course2');">পথ 2</a> </p>
+
+    <div id="bengali-course2" style="display:none;">
+      <a href="bengali\BNEM011.mp3" id = "bengali_course2_lesson11"   download="">   পাঠ 11</a>
+      <a href="bengali\BNEM012.mp3" id = "bengali_course2_lesson12"   download="">   পাঠ 12</a>
+      <a href="bengali\BNEM013.mp3" id = "bengali_course2_lesson13"   download="">   পাঠ 13</a>
+      <a href="bengali\BNEM014.mp3" id = "bengali_course2_lesson14"   download="">   পাঠ 14</a>
+      <a href="bengali\BNEM015.mp3" id = "bengali_course2_lesson15"   download="">   পাঠ 15</a>
+      <a href="bengali\BNEM016.mp3" id = "bengali_course2_lesson16"   download="">   পাঠ 16</a>
+      <a href="bengali\BNEM017.mp3" id = "bengali_course2_lesson17"   download="">   পাঠ 17</a>
+      <a href="bengali\BNEM018.mp3" id = "bengali_course2_lesson18"   download="">   পাঠ 18</a>
+      <a href="bengali\BNEM019.mp3" id = "bengali_course2_lesson19"   download="">   পাঠ 19</a>
+      <a href="bengali\BNEM020.mp3" id = "bengali_course2_lesson20"   download="">   পাঠ 20</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('bengali-course3');">পথ 3</a> </p>
+
+    <div id="bengali-course3" style="display:none;">
+      <a href="bengali\BNEM021.mp3" id = "bengali_course3_lesson21"   download=""> 21</a>
+      <a href="bengali\BNEM022.mp3" id = "bengali_course3_lesson22"   download="">   পাঠ 22</a>
+      <a href="bengali\BNEM023.mp3" id = "bengali_course3_lesson23"   download="">   পাঠ 23</a>
+      <a href="bengali\BNEM024.mp3" id = "bengali_course3_lesson24"   download="">   পাঠ 24</a>
+      <a href="bengali\BNEM025.mp3" id = "bengali_course3_lesson25"   download="">   পাঠ 25</a>
+      <a href="bengali\BNEM026.mp3" id = "bengali_course3_lesson26"   download="">   পাঠ 26</a>
+      <a href="bengali\BNEM027.mp3" id = "bengali_course3_lesson27"   download="">   পাঠ 27</a>
+      <a href="bengali\BNEM028.mp3" id = "bengali_course3_lesson28"   download="">   পাঠ 28</a>
+      <a href="bengali\BNEM029.mp3" id = "bengali_course3_lesson29"   download="">   পাঠ 29</a>
+      <a href="bengali\BNEM030.mp3" id = "bengali_course3_lesson30"   download="">   পাঠ 30</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('bengali-course4');">পথ 4</a> </p>
+
+    <div id="bengali-course4" style="display:none;">
+      <a href="bengali\BNEM041.mp3" id = "bengali_course4_lesson31"   download="">   পাঠ 31</a>
+      <a href="bengali\BNEM042.mp3" id = "bengali_course4_lesson32"   download="">   পাঠ 32</a>
+      <a href="bengali\BNEM043.mp3" id = "bengali_course4_lesson33"   download="">   পাঠ 33</a>
+      <a href="bengali\BNEM044.mp3" id = "bengali_course4_lesson34"   download="">   পাঠ 34</a>
+      <a href="bengali\BNEM045.mp3" id = "bengali_course4_lesson35"   download="">   পাঠ 35</a>
+      <a href="bengali\BNEM046.mp3" id = "bengali_course4_lesson36"   download="">   পাঠ 36</a>
+      <a href="bengali\BNEM047.mp3" id = "bengali_course4_lesson37"   download="">   পাঠ 37</a>
+      <a href="bengali\BNEM048.mp3" id = "bengali_course4_lesson38"   download="">   পাঠ 38</a>
+      <a href="bengali\BNEM049.mp3" id = "bengali_course4_lesson39"   download="">   পাঠ 39</a>
+      <a href="bengali\BNEM050.mp3" id = "bengali_course4_lesson40"   download="">   পাঠ 40</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('bengali-course5');">পথ 5</a> </p>
+
+    <div id="bengali-course5" style="display:none;">
+      <a href="bengali\BNEM051.mp3" id = "bengali_course5_lesson41"   download="">   পাঠ 41</a>
+      <a href="bengali\BNEM052.mp3" id = "bengali_course5_lesson42"   download="">   পাঠ 42</a>
+      <a href="bengali\BNEM053.mp3" id = "bengali_course5_lesson43"   download="">   পাঠ 43</a>
+      <a href="bengali\BNEM054.mp3" id = "bengali_course5_lesson44"   download="">   পাঠ 44</a>
+      <a href="bengali\BNEM055.mp3" id = "bengali_course5_lesson45"   download="">   পাঠ 45</a>
+      <a href="bengali\BNEM056.mp3" id = "bengali_course5_lesson46"   download="">   পাঠ 46</a>
+      <a href="bengali\BNEM057.mp3" id = "bengali_course5_lesson47"   download="">   পাঠ 47</a>
+      <a href="bengali\BNEM058.mp3" id = "bengali_course5_lesson48"   download="">   পাঠ 48</a>
+      <a href="bengali\BNEM059.mp3" id = "bengali_course5_lesson49"   download="">   পাঠ 49</a>
+      <a href="bengali\BNEM060.mp3" id = "bengali_course5_lesson50"   download="">   পাঠ 50</a>
+    </div>
+
+
+    <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 4</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 5</a> -->
+  </div>
+</div>
+
+<div class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="indonesian-lessons"><!--HERE same thing as before, gave the ID urdu lessons -->
+  <a href="javascript:void(0)" onclick="audioFiles_close('indonesian-lessons');" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px"><!--HERE closes urdu lessons -->
+    <i class="fa fa-remove"></i>
+  </a>
+  <h1 style="text-align:center;font-size:50px;"> Indonesian / bahasa Indonesia </h1>
+  <div class="w3-bar-block w3-center">
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('indonesian-course1');">Tentu saja 1</a> </p>
+
+    <div id="indonesian-course1" style="display:none;">
+      <a href="indonesian\IDEM001.mp3" id = "indonesian_course1_lesson1"   download="">  Pelajaran 1</a>
+      <a href="indonesian\IDEM002.mp3" id = "indonesian_course1_lesson2"   download="">  Pelajaran 2</a>
+      <a href="indonesian\IDEM003.mp3" id = "indonesian_course1_lesson3"   download="">  Pelajaran 3</a>
+      <a href="indonesian\IDEM004.mp3" id = "indonesian_course1_lesson4"   download="">  Pelajaran 4</a>
+      <a href="indonesian\IDEM005.mp3" id = "indonesian_course1_lesson5"   download="">  Pelajaran 5</a>
+      <a href="indonesian\IDEM006.mp3" id = "indonesian_course1_lesson6"   download="">  Pelajaran 6</a>
+      <a href="indonesian\IDEM007.mp3" id = "indonesian_course1_lesson7"   download="">  Pelajaran 7</a>
+      <a href="indonesian\IDEM008.mp3" id = "indonesian_course1_lesson8"   download="">  Pelajaran 8</a>
+      <a href="indonesian\IDEM009.mp3" id = "indonesian_course1_lesson9"   download="">  Pelajaran 9</a>
+      <a href="indonesian\IDEM010.mp3" id = "indonesian_course1_lesson10"  download="">  Pelajaran 10</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('indonesian-course2');">Tentu saja 2</a> </p>
+
+    <div id="indonesian-course2" style="display:none;">
+      <a href="indonesian\IDEM011.mp3" id = "indonesian_course2_lesson11"   download="">  Pelajaran 11</a>
+      <a href="indonesian\IDEM012.mp3" id = "indonesian_course2_lesson12"   download="">  Pelajaran 12</a>
+      <a href="indonesian\IDEM013.mp3" id = "indonesian_course2_lesson13"   download="">  Pelajaran 13</a>
+      <a href="indonesian\IDEM014.mp3" id = "indonesian_course2_lesson14"   download="">  Pelajaran 14</a>
+      <a href="indonesian\IDEM015.mp3" id = "indonesian_course2_lesson15"   download="">  Pelajaran 15</a>
+      <a href="indonesian\IDEM016.mp3" id = "indonesian_course2_lesson16"   download="">  Pelajaran 16</a>
+      <a href="indonesian\IDEM017.mp3" id = "indonesian_course2_lesson17"   download="">  Pelajaran 17</a>
+      <a href="indonesian\IDEM018.mp3" id = "indonesian_course2_lesson18"   download="">  Pelajaran 18</a>
+      <a href="indonesian\IDEM019.mp3" id = "indonesian_course2_lesson19"   download="">  Pelajaran 19</a>
+      <a href="indonesian\IDEM020.mp3" id = "indonesian_course2_lesson20"   download="">  Pelajaran 20</a>
+    </div>
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('indonesian-course3');">Tentu saja 3</a> </p>
+
+    <div id="indonesian-course3" style="display:none;">
+      <a href="indonesian\IDEM021.mp3" id = "indonesian_course3_lesson21"   download="">  Pelajaran 21</a>
+      <a href="indonesian\IDEM022.mp3" id = "indonesian_course3_lesson22"   download="">  Pelajaran 22</a>
+      <a href="indonesian\IDEM023.mp3" id = "indonesian_course3_lesson23"   download="">  Pelajaran 23</a>
+      <a href="indonesian\IDEM024.mp3" id = "indonesian_course3_lesson24"   download="">  Pelajaran 24</a>
+      <a href="indonesian\IDEM025.mp3" id = "indonesian_course3_lesson25"   download="">  Pelajaran 25</a>
+      <a href="indonesian\IDEM026.mp3" id = "indonesian_course3_lesson26"   download="">  Pelajaran 26</a>
+      <a href="indonesian\IDEM027.mp3" id = "indonesian_course3_lesson27"   download="">  Pelajaran 27</a>
+      <a href="indonesian\IDEM028.mp3" id = "indonesian_course3_lesson28"   download="">  Pelajaran 28</a>
+      <a href="indonesian\IDEM029.mp3" id = "indonesian_course3_lesson29"   download="">  Pelajaran 29</a>
+      <a href="indonesian\IDEM030.mp3" id = "indonesian_course3_lesson30"   download="">  Pelajaran 30</a>
+    </div>
+
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('indonesian-course4');">Tentu saja 4</a> </p>
+
+    <div id="indonesian-course4" style="display:none;">
+      <a href="indonesian\IDEM031.mp3" id = "indonesian_course4_lesson31"   download="">  Pelajaran 31</a>
+      <a href="indonesian\IDEM032.mp3" id = "indonesian_course4_lesson32"   download="">  Pelajaran 32</a>
+      <a href="indonesian\IDEM033.mp3" id = "indonesian_course4_lesson33"   download="">  Pelajaran 33</a>
+      <a href="indonesian\IDEM034.mp3" id = "indonesian_course4_lesson34"   download="">  Pelajaran 34</a>
+      <a href="indonesian\IDEM035.mp3" id = "indonesian_course4_lesson35"   download="">  Pelajaran 35</a>
+      <a href="indonesian\IDEM036.mp3" id = "indonesian_course4_lesson36"   download="">  Pelajaran 36</a>
+      <a href="indonesian\IDEM037.mp3" id = "indonesian_course4_lesson37"   download="">  Pelajaran 37</a>
+      <a href="indonesian\IDEM038.mp3" id = "indonesian_course4_lesson38"   download="">  Pelajaran 38</a>
+      <a href="indonesian\IDEM039.mp3" id = "indonesian_course4_lesson39"   download="">  Pelajaran 39</a>
+      <a href="indonesian\IDEM040.mp3" id = "indonesian_course4_lesson40"   download="">  Pelajaran 40</a>
+    </div>
+
+
+
+    <p> <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><a href="javascript:void(0)" onclick="manage_downloads('indonesian-course5');">Tentu saja 5</a> </p>
+
+    <div id="indonesian-course5" style="display:none;">
+      <a href="indonesian\IDEM041.mp3" id = "indonesian_course5_lesson41"   download="">  Pelajaran 41</a>
+      <a href="indonesian\IDEM042.mp3" id = "indonesian_course5_lesson42"   download="">  Pelajaran 42</a>
+      <a href="indonesian\IDEM043.mp3" id = "indonesian_course5_lesson43"   download="">  Pelajaran 43</a>
+      <a href="indonesian\IDEM044.mp3" id = "indonesian_course5_lesson44"   download="">  Pelajaran 44</a>
+      <a href="indonesian\IDEM045.mp3" id = "indonesian_course5_lesson45"   download="">  Pelajaran 45</a>
+      <a href="indonesian\IDEM046.mp3" id = "indonesian_course5_lesson46"   download="">  Pelajaran 46</a>
+      <a href="indonesian\IDEM047.mp3" id = "indonesian_course5_lesson47"   download="">  Pelajaran 47</a>
+      <a href="indonesian\IDEM048.mp3" id = "indonesian_course5_lesson48"   download="">  Pelajaran 48</a>
+      <a href="indonesian\IDEM049.mp3" id = "indonesian_course5_lesson49"   download="">  Pelajaran 49</a>
+      <a href="indonesian\IDEM050.mp3" id = "indonesian_course5_lesson50"   download="">  Pelajaran 50</a>
+    </div>
+
+    <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 4</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Course 5</a> -->
+  </div>
+</div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Language Drop</b></h1>
+  <p><b>A new language is a new life | Learn English NOW!</b></p><!--LOL this sounds like an ad -->
+  <!-- <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p> -->
+</header>
+</div>
+
+</div>
+
+<!-- Photo Grid, Lets make this dynamic -->
+<div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <p style="font-size:30px"><b>Urdu /  اردو</b></p>
+    <img src="pakistan.png" style="width:100%" onclick="audioFiles_open('urdu-lessons')" class = "w3-button">
+    <p style="font-size:30px"><b>Hindi / हिंदी</b></p>
+    <img src="india.png" style="width:100%" onclick="audioFiles_open('hindu-lessons')" class = "w3-button">
+    <!-- <p style="font-size:30px"><b>Arabic / عربى</b></p>
+    <img src="uae.png" style="width:100%" onclick="audioFiles_open('arabic-lessons')" class = "w3-button"> -->
+    <p style="font-size:30px"><b>Bengali / বাঙালি</b></p>
+    <img src="bangaladesh.png" style="width:100%" onclick="audioFiles_open('bengali-lessons')" class = "w3-button">
+    <p style="font-size:30px"><b>Indonesian / bahasa Indonesia</b></p>
+    <img src="indonesia.png" style="width:100%" onclick="audioFiles_open('indonesian-lessons')" class = "w3-button">
+  </div>
+
+  <!-- <div class="w3-third">
+    <img src="/w3images/coffee.jpg" style="width:100%">
+    <img src="/w3images/bridge.jpg" style="width:100%">
+    <img src="/w3images/notebook.jpg" style="width:100%">
+    <img src="/w3images/london.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/workbench.jpg" style="width:100%">
+    <img src="/w3images/gondol.jpg" style="width:100%">
+    <img src="/w3images/skies.jpg" style="width:100%">
+    <img src="/w3images/lights.jpg" style="width:100%">
+    <img src="/w3images/workshop.jpg" style="width:100%">
+  </div> -->
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer, need to really change this -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+
+  <p class="w3-medium">Created by Language Drop </p>
+  <p class="w3-medium">Ruth Gebremedhin, Shahad Badri, Rumail Memon </p>
+</footer>
+
+<script src="script.js"></script>
+<!--Toggle grid padding-->
+
+</body>
+</html>

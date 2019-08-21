@@ -14,3 +14,4 @@ Download include languageDrop image using an image burner like [balenaEtcher](ht
 
 ## How to Accomplish Something Similar?
 * Checkout this [link](https://gremaudpi.emf-informatique.ch/how-to-build-a-captive-web-portal-with-any-router-and-a-raspberry-pi/)
+* [PirateBox](https://daviddarts.com/piratebox)
